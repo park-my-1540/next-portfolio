@@ -17,7 +17,7 @@ export default function Projects({projects}){
 
                 <div className="grid grid-cols-1 md:grid-cols-2 py-10 m-6 gap-8 sm:w-full">
                 {
-                    projects.results.map((aProject, index) => (
+                    projects.results?.map((aProject, index) => (
                         <ProjectItem key={aProject.id} data={aProject}/>
                     ))
                 }
