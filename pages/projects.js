@@ -49,8 +49,8 @@ export async function getStaticProps() {
       const projects = await res.json();
       
       // string 배열로 id 가져오는것.
-    const projectNames = projects.results.map(aProject => aProject.properties.이름.title[0].plain_text)
-    console.log(projectNames); // 서버
+    // const projectNames = projects.results.map(aProject => aProject.properties.이름.title[0].plain_text)
+    // console.log(projectNames); // 서버
     return {
         props : {projects}
     }
